@@ -2,7 +2,6 @@ const React = require('react');
 const PropTypes = require('prop-types');
 const isEmpty = require('lodash.isempty');
 const { FormInput } = require('hadron-react-components');
-const { shell } = require('electron');
 const Actions = require('../actions');
 
 /**
