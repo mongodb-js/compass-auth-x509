@@ -35,7 +35,7 @@ class X509 extends React.Component {
    */
   getUsernameError() {
     const connection = this.props.currentConnection;
-    if (!this.props.isValid && isEmpty(connection.x509_username)) {
+    if (!this.props.isValid && isEmpty(connection.x509Username)) {
       return 'Username is required';
     }
   }
@@ -53,7 +53,7 @@ class X509 extends React.Component {
           name="x509-username"
           error={this.getUsernameError()}
           changeHandler={this.onUsernameChanged.bind(this)}
-          value={this.props.currentConnection.x509_username || ''} />
+          value={this.props.currentConnection.x509Username || ''} />
       </div>
     );
   }

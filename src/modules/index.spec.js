@@ -19,7 +19,7 @@ describe('Extensions', () => {
     it('changes the username in the store', (done) => {
       const unsubscribe = store.listen((state) => {
         unsubscribe();
-        expect(state.currentConnection.x509_username).to.equal('test');
+        expect(state.currentConnection.x509Username).to.equal('test');
         done();
       });
       Actions.onX509UsernameChanged('test');

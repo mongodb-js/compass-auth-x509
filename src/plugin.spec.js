@@ -6,7 +6,7 @@ describe('<X509 />', () => {
   describe('#render', () => {
     context('when the form is valid', () => {
       const connection = {
-        x509_username: 'user'
+        x509Username: 'user'
       };
       const component = mount(
         <X509 currentConnection={connection} isValid />
@@ -24,7 +24,7 @@ describe('<X509 />', () => {
     context('when the form is not valid', () => {
       context('when the username is empty', () => {
         const connection = {
-          x509_username: ''
+          x509Username: ''
         };
         const component = mount(
           <X509 currentConnection={connection} />
@@ -46,7 +46,7 @@ describe('<X509 />', () => {
 
       context('when the username is null', () => {
         const connection = {
-          x509_username: null
+          x509Username: null
         };
         const component = mount(
           <X509 currentConnection={connection} />

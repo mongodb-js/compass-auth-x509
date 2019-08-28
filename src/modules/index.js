@@ -6,7 +6,7 @@ import Actions from 'actions';
  * @param {String} username - The username.
  */
 function onX509UsernameChanged(username) {
-  this.state.currentConnection.x509_username = username;
+  this.state.currentConnection.x509Username = username;
   this.trigger(this.state);
 }
 
