@@ -1,7 +1,7 @@
 {
   "name": "@mongodb-js/compass-auth-x509",
   "productName": "Compass X.509 Auth Role",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Provides X.509 Connectivity to the Connection Plugin",
   "main": "lib/index.js",
   "apiVersion": "2.0.0",
