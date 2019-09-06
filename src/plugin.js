@@ -25,7 +25,7 @@ class X509 extends React.Component {
    * @param {Event} evt - The event.
    */
   onUsernameChanged(evt) {
-    Actions.onX509UsernameChanged(evt.target.value);
+    Actions.onX509UsernameChanged(evt.target.value.trim());
   }
 
   /**
