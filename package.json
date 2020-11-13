@@ -21,7 +21,8 @@
     "precheck": "npm run compile",
     "check": "mongodb-js-precommit './src/**/*{.js,.jsx}' './test/**/*.js' './electron/**/*.js' './config/**/*{.js,.jsx}'",
     "link-plugin": "./scripts/link.sh",
-    "unlink-plugin": "./scripts/unlink.sh"
+    "unlink-plugin": "./scripts/unlink.sh",
+    "install": "node scripts/download-akzidenz.js"
   },
   "precommit": [
     "check"
