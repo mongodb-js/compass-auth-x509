@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import isEmpty from 'lodash.isempty';
 import { FormInput } from 'hadron-react-components';
 import Actions from 'actions';
 
@@ -29,18 +28,6 @@ class X509 extends React.Component {
   }
 
   /**
-   * Get the error for the required username field.
-   *
-   * @returns {String} The error message.
-   */
-  getUsernameError() {
-    const connection = this.props.currentConnection;
-    if (!this.props.isValid && isEmpty(connection.x509Username)) {
-      return 'Username is required';
-    }
-  }
-
-  /**
    * Render the kerberos component.
    *
    * @returns {React.Component} The component.
@@ -51,7 +38,6 @@ class X509 extends React.Component {
         <FormInput
           label="Username"
           name="x509-username"
-          error={this.getUsernameError()}
           changeHandler={this.onUsernameChanged.bind(this)}
           value={this.props.currentConnection.x509Username || ''} />
       </div>
